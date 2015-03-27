@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+
+    <title>선비인: 어진이들의 담론 공간</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="선비인 댓글 중심 담론 공유 커뮤니티">
+    <meta name="author" content="(팀이름)">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    -->
+
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+    <!-- IE 9 Fallback-->
+    <!--[if IE 9]>
+    <link href="assets/css/ie.css" rel="stylesheet">
+    <![endif]-->
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="home.html"><b>선비인 로고</b></a>
+            </div>
+            <!-- end of navbar0header -->
+
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">+이슈쓰기</a></li>
+                    <li><a href="#">북마크</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <!--<span class="glyphicon glyphicon-user"></span> --> 로그인
+                            <span class="caret"></span></a>
+
+                        <ul class="dropdown-menu" role="menu" id="login_panel">
+                            <li>
+                                SNS 로그인
+                            </li>
+                            <li>
+                                <a class="fb_btn" href="#" data-social-provider="facebook">
+                                    <span class="sc_logo"><i class="fa fa-facebook"></i></span>
+                                    <span class="sc_text">FACEBOOK 로그인</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a class="tw_btn" href="#" data-social-provider="twitter">
+                                    <span class="sc_logo"><i class="fa fa-twitter"></i></span>
+                                    <span class="sc_text">TWITTER 로그인</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- end of navbar-right -->
+        </div>
+        <!-- ed of contatiner -->
+    </div>
+    <!-- END NAVBAR -->
+
+
+    <!-- BREADCRUMBS -->
+
+    <div class="page-header">
+<!--
+        <div class="container">
+            <h2 class="page-title pull-left">이슈</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li class="active">Blog Medium Thumbnail</li>
+            </ol>
+        </div>
+-->
+    </div>
+
+    <!-- END BREADCRUMBS -->
+
+    <!-- PAGE CONTENT -->
+    <div class="page-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <!-- BLOG ENTRIES -->
+                    <div class="blog medium-thumbnail margin-bottom-30px">
+                        <!-- blog post -->
+                        <article class="read-post">
+                            <header class="read-header">
+                                <h2 class="read-title">
+                                    모바일 결제시장 선점
+                                </h2><!--
+                                <div class="meta-line clearfix">
+                                    <div class="meta-author-category pull-left">
+                                        <span class="post-author">by <a href="#">John Doe</a></span>
+                                        <span class="post-category">In: <a href="#">모바일 결제</a>, <a href="#">페이스북</a>, <a href="#">핀테크</a></span>
+                                    </div>
+                                    <div class="meta-tag-comment pull-right">
+                                        <span class="post-tags"><i class="fa fa-tag"></i> <a href="#">story</a>, <a href="#">inspiration</a>, <a href="#">creative</a></span>
+                                        <span class="post-comment"><i class="fa fa-comments"></i> <a href="#">3 Comments</a></span>
+                                    </div>
+                                </div>-->
+                                <div id="share-buttons-wrapper">
+                                    <!--<a href="#" class="btn btn-default">URL복사</a>-->
+                                    <a class="permalink-share-buttons" id="hero-twitter-share" href="https://twitter.com/" target="_blank"><img src="img/share_twitter.png"></a>
+                                    <a class="permalink-share-buttons" id="hero-facebook-share" href="https://www.facebook.com/" target="_blank"><img src="img/share_facebook.png"></a>
+                                </div>
+                            </header>
+                            <div class="entry-content clearfix">
+                                <div class="row">
+                                    <figure class="featured-image">
+                                        <a href="#">
+                                            <div class="post-date-info clearfix"><span class="post-month">DEC</span><span class="post-date">11</span><span class="post-year">2014</span></div>
+                                            <img src="http://lorempixel.com/400/200/" width="100%" class="img-responsive" alt="featured-image">
+                                        </a>
+                                    </figure>
+                                </div>
+
+                                <hr />
+
+                                <div class="row">
+                                    <div class="excerpt">
+                                        <p>조만간 페이스북 메신저에 돈을 주고받을 수 있는 송금 서비스가 추가됩니다. 지난 17일 페이스북은 자사 웹사이트를 통해 위와 같은 내용을 발표했는데요. 방식을 살펴보니 우리가 페이스북 메신저에서 사진을 전송할 때와 비슷한 방법으로 송금이 이뤄집니다. 은행 계좌와의 연결은 필요 없으며, 본인이 가지고 있는 신용카드 정보를 기재한 후 개인 비밀번호 입력을 통해 송금하는 방식입니다.</p>
+                                    </div>
+                                </div>
+
+                                <hr />
+
+                                <div class="news-item margin-bottom-30px clearfix">
+                                    <a href="#"><img src="http://lorempixel.com/140/73/" class="img-responsive pull-left" alt="News Thumbnail"></a>
+                                    <div class="right">
+                                        <h3 class="news-title"><a href="#">카카오톡이 지갑도 된다고? 카카오페이출시</a></h3>
+                                        <p>카카오가 추진해오던 금융 서비스 중 하나인 카카오톡 기반 모바일 간편결제 서비스 ‘카카오페이’가 LG CNS와의 협력하에 출시됐습니다.</p>
+                                    </div>
+                                </div>
+
+                                <div class="news-item margin-bottom-30px clearfix">
+                                    <a href="#"><img src="http://lorempixel.com/140/73/" class="img-responsive pull-left" alt="News Thumbnail"></a>
+                                    <div class="right">
+                                        <h3 class="news-title"><a href="#">알리페이 한국 진출 초읽기 </a></h3>
+                                        <p>카카오페이가 출시된 지 채 한 달이 지나지 않았건만, 이를 뒤쫓는 새로운 강자들까지 나타나며 한국의 모바일 결제 시장에는 전운이 감돌고 있습니다.</p>
+                                    </div>
+                                </div>
+                                <hr/>
+
+                                <div class="row">
+                                    <div class="excerpt">
+                                        <p>모바일 결제 서비스는 질적인 차이가 크지 않아 규모의 경제를 이미 갖추고 보안성도 뛰어난 해외 대형 PG 업체가 매우 유리하다. 이들이 낮은 수수료를 앞세워 국내 시장을 공략하면 막아내기가 쉽지 않다.</p>
+                                    </div>
+                                </div>
+                                <hr/>
+
+
+                                <div class="boxed-content left-aligned left-boxed-icon">
+                                    <i class="fa fa-flag"></i>
+                                    <h2 class="boxed-content-title">관련 키워드</h2>
+                                    <p>페이스북, 모바일 결제, 알리페이, 카카오페이, 카카오톡, 페이스북 코인</p>
+                                </div>
+
+                                <div class="boxed-content left-aligned left-boxed-icon">
+                                    <i class="fa fa-globe"></i>
+                                    <h2 class="boxed-content-title">관련 항목 보기</h2>
+                                    <p>위키피디아:페이스북 엔하위키:핀테크</p>
+                                </div>
+
+                            </div>
+                        </article>
+                        <!-- end blog post -->
+                        <!-- END BLOG ENTRIES -->
+                    </div>
+<!--
+                    <ul class="pager">
+                        <li><a href="#">Previous</a></li>
+                        <li><a href="#">Next</a></li>
+                    </ul>
+                    -->
+                </div>
+
+                <div class="col-md-7 right-panel">
+                    <!-- SIDEBAR -->
+
+
+                    <!-- categories
+                    <div class="widget">
+                        <h4 class="widget-title">CATEGORIES</h4>
+                        <ul class="list-unstyled category-list">
+                            <li><a href="#">Business (23)</a></li>
+                            <li>
+                                <a href="#">Creative (14)</a>
+                                <ul class="sub-category-list">
+                                    <li><a href="#">Digital Imaging (8)</a></li>
+                                    <li><a href="#">Web Design (6)</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Media (65)</a></li>
+                            <li><a href="#">Photography (17)</a></li>
+                            <li><a href="#">Corporate (9)</a></li>
+                        </ul>
+                    </div>
+                     end categories -->
+
+                    <!-- tabbed content -->
+                    <div class="widget">
+                        <div class="tabpanel">
+                            <!-- nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#content-recent-comments" aria-controls="content-recent-comments" role="tab" data-toggle="tab">
+                                        <!--<i class="fa fa-comments"></i> --> 베스트 어록</a>
+                               </li>
+                                <li role="presentation">
+                                    <a href="#content-recents" aria-controls="content-recents" role="tab" data-toggle="tab">시간순</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#content-popular" aria-controls="content-popular" role="tab" data-toggle="tab"> 편집 내역 </a>
+                                </li>
+                            </ul>
+                            <!-- end nav tabs -->
+
+                            <!-- tab panes -->
+                            <div class="tab-content">
+                                <div id="content-recent-comments" class="tab-pane fade active in" role="tabpanel">
+                                    <ul class="list-unstyled recent-comments">
+                                        <li>
+                                            <div class="reply">
+                                                <!--
+                                                <a href="#" class="media-left"><img src="assets/img/user1.png" class="img-circle" alt="Avatar"></a>
+                                                -->
+                                                <div class="reply-body">
+                                                  <!--  <h4 class="media-heading"><a href="#">Antonio</a> in <a href="#">Holisticly Unleash Enabled Information Via Customized Value</a></h4> -->
+                                                    <p class="reply-text">
+                                                        <img class="quote-image" src="img/quote@2x.png" data-src-2x="img/quote@2x.png" data-src-1x="img/quote.png">
+                                                         기자 본인이 올린 다른 글에서 뭐라고 쓰고 있나.
+                                                        본문에서 쓴 대로 면책조항이 있어서 그 방법대로 매번 빠져나가려고 한다는걸 지적해야 옳지 않습니까? 책임을 무겁게 지우고 대신 자유를 달라고요.
+                                                        </p>
+                                                    <div class="row">
+
+                                                        <p class="col-md-6 reply-vote ">
+                                                            <button type="button" class="btn btn-default btn-xs">
+                                                                <span class="glyphicon glyphicon-chevron-up"></span> Up
+                                                            </button>
+                                                            <button type="button" class="btn btn-default btn-xs">
+                                                                <span class="glyphicon glyphicon-chevron-down"></span> Down
+                                                            </button>
+                                                            <button type="button" class="btn btn-default btn-xs">
+                                                                <span class="glyphicon glyphicon-screenshot"></span> 신고
+                                                            </button>
+                                                        <p class="col-md-6 author-name">
+                                                            by <a href="#">브라이언</a>
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="reply">
+                                                <!--
+                                                <a href="#" class="media-left"><img src="assets/img/user1.png" class="img-circle" alt="Avatar"></a>
+                                                -->
+                                                <div class="reply-body">
+                                                    <!--  <h4 class="media-heading"><a href="#">Antonio</a> in <a href="#">Holisticly Unleash Enabled Information Via Customized Value</a></h4> -->
+                                                    <p class="reply-text">
+                                                        <img class="quote-image" src="img/quote@2x.png" data-src-2x="img/quote@2x.png" data-src-1x="img/quote.png">
+                                                        우선 기존의 자본금이 얼마 있어야 한다든지,
+                                                        몇 년간의 사업경험이 있어야 한다 등 상향식 규제를 핀테크 스타트업에 적용하면 안 되겠지</p>
+
+                                                    <div class="row">
+
+                                                        <p class="col-md-6 reply-vote ">
+                                                            <button type="button" class="btn btn-default btn-xs">
+                                                                <span class="glyphicon glyphicon-chevron-up"></span> Up
+                                                            </button>
+                                                            <button type="button" class="btn btn-default btn-xs">
+                                                                <span class="glyphicon glyphicon-chevron-down"></span> Down
+                                                            </button>
+                                                            <button type="button" class="btn btn-default btn-xs">
+                                                                <span class="glyphicon glyphicon-screenshot"></span> 신고
+                                                            </button>
+                                                        <p class="col-md-6 author-name">
+                                                            by <a href="#">김길동</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="reply">
+                                                <!--
+                                                <a href="#" class="media-left"><img src="assets/img/user1.png" class="img-circle" alt="Avatar"></a>
+                                                -->
+                                                <div class="reply-body">
+                                                    <!--  <h4 class="media-heading"><a href="#">Antonio</a> in <a href="#">Holisticly Unleash Enabled Information Via Customized Value</a></h4> -->
+                                                    <p class="reply-text">
+                                                        <img class="quote-image" src="img/quote@2x.png" data-src-2x="img/quote@2x.png" data-src-1x="img/quote.png">
+                                                        곧 한국에서도 관련 법안이 통과되면
+                                                        이제 좋은 사업아이템을 가진 기업가는
+                                                        바리바리 서류를 싸들고 은행을 가지 않고도,
+                                                        크라우드 펀딩을 통해 투자금을
+                                                        유치할 수 있는 길이 열릴 것 같아요</p>
+
+                                                    <div class="row">
+
+                                                        <p class="col-md-6 reply-vote ">
+                                                            <button type="button" class="btn btn-default btn-xs">
+                                                                <span class="glyphicon glyphicon-chevron-up"></span> Up
+                                                            </button>
+                                                            <button type="button" class="btn btn-default btn-xs">
+                                                                <span class="glyphicon glyphicon-chevron-down"></span> Down
+                                                            </button>
+                                                            <button type="button" class="btn btn-default btn-xs">
+                                                                <span class="glyphicon glyphicon-screenshot"></span> 신고
+                                                            </button>
+                                                        <p class="col-md-6 author-name">
+                                                            by <a href="#">박흥식</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="reply">
+                                                <!--
+                                                <a href="#" class="media-left"><img src="assets/img/user1.png" class="img-circle" alt="Avatar"></a>
+                                                -->
+                                                <div class="reply-body">
+                                                    <!--  <h4 class="media-heading"><a href="#">Antonio</a> in <a href="#">Holisticly Unleash Enabled Information Via Customized Value</a></h4> -->
+                                                    <p class="reply-text">
+                                                        <img class="quote-image" src="img/quote@2x.png" data-src-2x="img/quote@2x.png" data-src-1x="img/quote.png">
+                                                        미국에서도 이런 형태의 P2P 대출이
+                                                        합법과 불법의 도마 위에 올랐고, 당국은 일단
+                                                        지난 2008년 1분기~3분기 사이 렌딩클럽
+                                                        영업을 중지시켜 놓고 새로운 제도를 만들어
+                                                        P2P 대출을 인정해줬죠</p>
+
+                                                    <div class="row">
+
+                                                        <p class="col-md-6 reply-vote ">
+                                                            <button type="button" class="btn btn-default btn-xs">
+                                                                <span class="glyphicon glyphicon-chevron-up"></span> Up
+                                                            </button>
+                                                            <button type="button" class="btn btn-default btn-xs">
+                                                                <span class="glyphicon glyphicon-chevron-down"></span> Down
+                                                            </button>
+                                                            <button type="button" class="btn btn-default btn-xs">
+                                                                <span class="glyphicon glyphicon-screenshot"></span> 신고
+                                                            </button>
+                                                        <p class="col-md-6 author-name">
+                                                            by <a href="#">김철</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="reply">
+                                                <!--
+                                                <a href="#" class="media-left"><img src="assets/img/user1.png" class="img-circle" alt="Avatar"></a>
+                                                -->
+                                                <div class="reply-body">
+                                                    <!--  <h4 class="media-heading"><a href="#">Antonio</a> in <a href="#">Holisticly Unleash Enabled Information Via Customized Value</a></h4> -->
+                                                    <p class="reply-text">
+                                                        <img class="quote-image" src="img/quote@2x.png" data-src-2x="img/quote@2x.png" data-src-1x="img/quote.png">
+                                                        우리가 결제할 때 복잡한 단계를 요구하는
+                                                        인터넷 익스플로러 ‘액티브X’나
+                                                        공인인증서 입력 단계를 없애는 건
+                                                        그냥 간편할 결제 기술에 불과하다고 생각해</p>
+
+                                                    <div class="row">
+
+                                                        <p class="col-md-6 reply-vote ">
+                                                            <button type="button" class="btn btn-default btn-xs">
+                                                                <span class="glyphicon glyphicon-chevron-up"></span> Up
+                                                            </button>
+                                                            <button type="button" class="btn btn-default btn-xs">
+                                                                <span class="glyphicon glyphicon-chevron-down"></span> Down
+                                                            </button>
+                                                            <button type="button" class="btn btn-default btn-xs">
+                                                                <span class="glyphicon glyphicon-screenshot"></span> 신고
+                                                            </button>
+                                                        <p class="col-md-6 author-name">
+                                                            by <a href="#">David Hong</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="reply">
+                                                <!--
+                                                <a href="#" class="media-left"><img src="assets/img/user1.png" class="img-circle" alt="Avatar"></a>
+                                                -->
+                                                <div class="reply-body">
+                                                    <!--  <h4 class="media-heading"><a href="#">Antonio</a> in <a href="#">Holisticly Unleash Enabled Information Via Customized Value</a></h4> -->
+                                                    <p class="reply-text">
+                                                        <img class="quote-image" src="img/quote@2x.png" data-src-2x="img/quote@2x.png" data-src-1x="img/quote.png">
+                                                        사실 우리나라는 여러 가지 문제로 이제야
+                                                        ‘간편하게’ 결제하는 것이 가능해졌지만,
+                                                        미국, 중국에선 이미 10년 전에도 가능했던 일이지</p>
+
+                                                    <div class="row">
+
+
+                                                        <p class="col-md-6 reply-vote ">
+                                                            <button type="button" class="btn btn-default btn-xs">
+                                                                <span class="glyphicon glyphicon-chevron-up"></span> Up
+                                                            </button>
+                                                            <button type="button" class="btn btn-default btn-xs">
+                                                                <span class="glyphicon glyphicon-chevron-down"></span> Down
+                                                            </button>
+                                                            <button type="button" class="btn btn-default btn-xs">
+                                                                <span class="glyphicon glyphicon-screenshot"></span> 신고
+                                                            </button>
+                                                        <p class="col-md-6 author-name">
+                                                            by <a href="#">Netfish88</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                                <div id="content-popular" class="tab-pane fade" role="tabpanel">
+                                    <ul class="list-unstyled blogposts popular">
+                                        <li>
+                                            <h4 class="post-title"><a href="#">Monotonectally Underwhelm Sustainable Outsourcing</a></h4>
+                                            <span class="text-muted">Nov 4, 2014 | by John Doe</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="post-title"><a href="#">Seamlessly Repurpose Equity Invested Intellectual Capital</a></h4>
+                                            <span class="text-muted">Nov 23, 2014 | by George</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="post-title"><a href="#">Efficiently Aggregate Multidisciplinary Markets With Professional Functionalities</a></h4>
+                                            <span class="text-muted">Nov 9, 2014 | by Jane</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="post-title"><a href="#">Collaboratively Actualize Revolutionary Total Linkage</a></h4>
+                                            <span class="text-muted">Nov 9, 2014 | by Smith</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="post-title"><a href="#">Credibly Disintermediate Client-centered Applications</a></h4>
+                                            <span class="text-muted">Nov 9, 2014 | by Barbara</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="content-recents" class="tab-pane fade" role="tabpanel">
+                                    <ul class="list-unstyled blogposts latest">
+                                        <li>
+                                            <h4 class="post-title"><a href="#">Assertively Streamline Error-free Quality</a></h4>
+                                            <span class="text-muted">Dec 9, 2014 | by John Doe</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="post-title"><a href="#">Proactively Monetize Long-term High-impact Architectures After Value-added Experiences</a></h4>
+                                            <span class="text-muted">Dec 12, 2014 | by George</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="post-title"><a href="#">Efficiently Repurpose Enterprise-wide Processes For Granular Applications</a></h4>
+                                            <span class="text-muted">Dec 29, 2014 | by Jane</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="post-title"><a href="#">Monotonectally Underwhelm Sustainable Outsourcing</a></h4>
+                                            <span class="text-muted">Nov 4, 2014 | by John Doe</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="post-title"><a href="#">Seamlessly Repurpose Equity Invested Intellectual Capital</a></h4>
+                                            <span class="text-muted">Nov 23, 2014 | by George</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <!-- end tab panes -->
+                        </div>
+                    </div>
+                    <!-- end tabbed content -->
+
+                    <!-- end tags -->
+
+                    <!-- text widget
+                    <div class="widget">
+                        <h4 class="widget-title">TEXT WIDGET</h4>
+                        <p>Conveniently develop parallel technologies via user-centric benefits. Globally deploy turnkey technologies vis-a-vis excellent partnerships. Completely aggregate one-to-one human capital with principle-centered initiatives. Seamlessly enable web-enabled.</p>
+                        <p> Appropriately foster ethical architectures via functional alignments. Holisticly unleash enabled information via customized value. Collaboratively syndicate corporate benefits without process-centric communities.</p>
+                    </div>
+                     end text widget -->
+
+                    <!-- END SIDEBAR -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END PAGE CONTENT -->
+
+    <!-- FOOTER -->
+    <footer>
+
+        <!-- COPYRIGHT -->
+        <div class="text-center copyright">
+            &copy;2015 Team Sunbin. All Rights Reserved.
+        </div>
+        <!-- END COPYRIGHT -->
+    </footer>
+    <!-- END FOOTER -->
+</div>
+<!-- END WRAPPER -->
+
+<!-- JAVASCRIPTS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<script src="assets/js/plugins/fitvids/jquery.fitvids.js"></script>
+<script src="assets/js/plugins/autohidingnavbar/jquery.bootstrap-autohidingnavbar.min.js"></script>
+
+<script type="text/javascript">
+    $(".navbar-fixed-top").autoHidingNavbar();
+</script>
+<!--
+<script src="assets/js/repute-scripts.min.js"></script>
+-->
+
+
+</body>
+</html>

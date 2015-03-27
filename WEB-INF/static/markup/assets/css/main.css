@@ -7,9 +7,7 @@ body {
 }
 
 body.layout-boxed {
-    background-image: url('../img/gray_jean.png?1353438653');
-    background-repeat: repeat;
-    background-color: #ccc
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -154,6 +152,10 @@ hr {
         top: inherit;
         right: inherit
     }
+}
+
+.excerpt > p {
+    font-size: 17px;
 }
 
 .page-content {
@@ -5798,6 +5800,28 @@ ul.sidebar-nav ul.submenu li:first-child a {
     margin-bottom: 20px
 }
 
+.blog .read-header {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.blog .read-title {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 30px;
+
+}
+
+.blog .read-post {
+
+}
+.blog .share-buttons-wrapper {
+    text-align: center;
+    margin: 10px;
+}
+
+.blog .excerpt
+
 .blog h2 {
     font-size: 22px
 }
@@ -5881,6 +5905,37 @@ ul.sidebar-nav ul.submenu li:first-child a {
     margin: 35px 0
 }
 
+
+.reply {
+    padding: 5px;
+    font-size: 17px;
+}
+
+.reply .reply-vote {
+}
+
+.reply .author-name {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    *display: inline;
+    font-family: inherit;
+    font-size: 15px
+}
+
+.quote-image {
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 28px;
+    height: 20px;
+}
+
+.right-panel .tabpanel {
+
+    padding: 0 0 0 40px;
+
+}
+
 @media screen and (max-width: 768px) {
     .blog .meta-line > div {
         display: block;
@@ -5918,8 +5973,8 @@ ul.sidebar-nav ul.submenu li:first-child a {
 }
 
 .recent-comments img {
-    width: 40px;
-    height: 40px
+/*    width: 40px;
+    height: 40px */
 }
 
 .recent-comments .media-heading {
@@ -5960,17 +6015,25 @@ ul.sidebar-nav ul.submenu li:first-child a {
     display: block;
     margin-bottom: 5px;
     padding: 4px 10px;
-    background-color: #406da4;
-    color: #fff;
-    border: 1px solid transparent
+ /**   background-color: #e6e6e6; **/
+    color: #333;
+    border: 1px solid #adadad;
 }
 
 .tag-list li a:hover, .tag-list li a:focus {
-    background-color: #fff;
-    border-color: #777;
-    color: #4a4a4a
+
+    background-color: #406da4;
+    color: #fff;
+    border-color: #406da4;
 }
 
+.permalink-share-buttons img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: -1px;
+}
 .blog.single .section-heading {
     margin-top: 0;
     font-family: inherit;
