@@ -4268,7 +4268,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .alert {
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
-    border-radius: 2px
+    border-radius: 2px;
+    display:none
 }
 
 div[class*="col-"] > .form-group {
@@ -5920,7 +5921,7 @@ ul.sidebar-nav ul.submenu li:first-child a {
     text-align: right;
     *display: inline;
     font-family: inherit;
-    font-size: 15px
+    font-size: 17px
 }
 
 .quote-image {
@@ -5954,7 +5955,7 @@ ul.sidebar-nav ul.submenu li:first-child a {
 }
 
 .blogposts li, .recent-comments li {
-    margin-bottom: 20px
+    margin-bottom: 15px
 }
 
 .blogposts li:last-child, .recent-comments li:last-child {
